@@ -26,6 +26,7 @@ async function main() {
             })
             .catch(error => {
                 console.log(error);
+                exitProcess();
             });
     } catch (error) {
         console.log(error);

@@ -10,6 +10,7 @@ async function spin(token) {
         (user?.currentSpins > 0) ? false : exitProcess(); 
     }).catch((error) => {
         logError(error);
+        exitProcess();
     });
 }
 
