@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const env = process.env;
-const baseUrl = 'https://bot.true.world/api';
+const baseUrl = 'https://api.true.world/api';
 
 const urls = {
     auth: `${baseUrl}/auth/signIn`,

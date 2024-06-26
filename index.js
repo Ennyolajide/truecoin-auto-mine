@@ -9,7 +9,7 @@ const telegramId = env.TELEGRAM_ID;
 
 async function main() {
     try {
-        const data = { userId: telegramId };
+        const data = { lang: 'en', userId: telegramId };
         axios.post(urls.auth, data, { headers: getHeaders() })
             .then((res) => {
                 const { token, user } = res.data;
