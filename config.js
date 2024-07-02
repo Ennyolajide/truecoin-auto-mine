@@ -15,6 +15,7 @@ function setToken(token) {
 function getHeaders(headers = {}) {
     return {
         ...headers,
+        'auth-key': env.AUTH_KEY,
         'Accept': 'application/json, text/plain, */*',
         'sendtime': new Date(Date.now()).toISOString(),
         'Sec-Fetch-Site': 'same-origin',
